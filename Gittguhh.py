@@ -1,3 +1,6 @@
+from asyncio import tasks
+
+
 def show_tasks(tasks):
     if not tasks:
         print("\nNo tasks available.\n")
@@ -7,11 +10,10 @@ def show_tasks(tasks):
             print(f"{i}. {task}")
         print()
 
-        def add_task(tasks):
+def add_task(tasks):
     task = input("Enter a task: ")
     tasks.append(task)
     print("Task added!\n")
-
 
 def delete_task(tasks):
     show_tasks(tasks)
@@ -46,7 +48,3 @@ def main():
             break
         else:
             print("Invalid choice. Try again.\n")
-def add_task(tasks):
-    task = input("Enter a new task: ")
-    tasks.append(task)
-    print(f"Added task: {task}\n")

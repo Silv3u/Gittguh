@@ -41,3 +41,7 @@ def main():
             break
         else:
             print("Invalid choice. Try again.\n")
+def add_task(tasks):
+    task = input("Enter a new task: ")
+    tasks.append(task)
+    print(f"Added task: {task}\n")

@@ -7,6 +7,11 @@ def show_tasks(tasks):
             print(f"{i}. {task}")
         print()
 
+        def add_task(tasks):
+    task = input("Enter a task: ")
+    tasks.append(task)
+    print("Task added!\n")
+
 
 def delete_task(tasks):
     show_tasks(tasks)
